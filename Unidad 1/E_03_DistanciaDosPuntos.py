@@ -3,7 +3,7 @@ import sys
 from PyQt5 import uic, QtWidgets
 from numpy import double
 
-qtCreatorFile = "P_05_DistanciaDosPuntos.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "E_03_DistanciaDosPuntos.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -24,8 +24,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         punto1.append(float(self.txtY1.text()))
         punto2.append(float(self.txtX2.text()))
         punto2.append(float(self.txtY2.text()))
-        print(punto1)
-        print(punto2)
         distancia = math.sqrt((punto2[0] - punto1[0])**2 + (punto2[1] - punto1[1])**2)
         messageBox = QtWidgets.QMessageBox()
         messageBox.setText(str(distancia))

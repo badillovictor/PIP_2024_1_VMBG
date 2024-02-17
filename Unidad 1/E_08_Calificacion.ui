@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Programa de Calificaciones</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 217, 223);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="btnCalcular">
     <property name="geometry">
@@ -22,6 +25,10 @@
       <width>83</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 120, 122);</string>
     </property>
     <property name="text">
      <string>Calcular</string>
@@ -36,6 +43,10 @@
       <height>28</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 111, 113);
+color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
@@ -45,6 +56,9 @@
       <width>101</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Calificacion</string>
@@ -58,6 +72,9 @@
       <width>91</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Calificacion</string>
