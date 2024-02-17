@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Logos"/>
+    <qresource prefix="/Todo">
+        <file>GoldenglowGG.jpg</file>
+    </qresource>
+</RCC>
