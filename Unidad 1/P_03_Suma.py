@@ -17,11 +17,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     # Área de los Slots
     def sumar(self):
         suma = int(self.txtA.text()) + int(self.txtB.text())
-        self.txtResultado.setText(str(suma))
+        self.txtSuma.setText(str(suma))
 
 
 if __name__ == "__main__":
-    print(random.randint(0, 1))
     app = QtWidgets.QApplication(sys.argv)
     window = MyApp()
     window.show()

@@ -40,9 +40,9 @@ border-radius: 30px;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>52</x>
       <y>70</y>
-      <width>63</width>
+      <width>101</width>
       <height>20</height>
      </rect>
     </property>
@@ -51,7 +51,7 @@ border-radius: 30px;</string>
 color: rgb(0, 0, 118);</string>
     </property>
     <property name="text">
-     <string>A:</string>
+     <string>Nombre:</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtNombre">
@@ -95,7 +95,7 @@ border-color: rgb(0, 98, 255);</string>
 color: rgb(0, 0, 118);</string>
     </property>
     <property name="text">
-     <string>B:</string>
+     <string>Edad:</string>
     </property>
    </widget>
   </widget>

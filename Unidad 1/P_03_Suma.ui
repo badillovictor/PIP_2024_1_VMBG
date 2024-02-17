@@ -75,7 +75,7 @@ border-color: rgb(0, 98, 255);</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btnCalcular">
+  <widget class="QPushButton" name="btnSumar">
    <property name="geometry">
     <rect>
      <x>300</x>
