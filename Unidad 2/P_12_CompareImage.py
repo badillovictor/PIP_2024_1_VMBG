@@ -2,7 +2,7 @@ import random
 import sys
 import time
 
-from PyQt5 import uic, QtWidgets, QtCore
+from PyQt5 import uic, QtWidgets, QtCore, QtGui
 
 qtCreatorFile = "P_12_CompareImage.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
@@ -13,11 +13,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
-        self.imageListTarget = []
-        self.imageListPlayer = []
+        self.imageList = [':/Personas/YoMero.png', ':/Personas/Moy.png', ':/Personas/Sofia.png', ':/Personas/Uriel.png']
         self.targetIndex = 0
         self.playerIndex = 0
-        self.changingState = False
+        self.timerON = False
 
         # Área de los Signals
         self.btnSwitch.clicked.connect(self.switch)
@@ -31,7 +30,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def cycleImages(self):
         if self.sender() == self.btnNext:
             self.targetIndex += 1
-            if self.targetIndex == len(self.imageListTarget) - 1:
+            if self.targetIndex == len(self.imageList) - 1:
                 self.btnNext.setEnabled(False)
             self.btnPrev.setEnabled(True)
         else:
@@ -39,14 +38,27 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             if self.targetIndex == 0:
                 self.btnNext.setEnabled(False)
             self.btnPrev.setEnabled(True)
-            pass
+        self.lblTarget.setPixmap(QtGui.QPixmap(self.imageList[self.targetIndex]))
+
 
     def cycleImagesTimer(self):
-        # Move next in imgListPlayer
-        pass
+        try:
+            self.playerIndex = (self.playerIndex + 1) % len(self.imageList)
+            self.lblPlayer.setPixmap(QtGui.QPixmap(self.imageList[self.playerIndex]))
+        except Exception as e:
+            print(e)
 
     def check(self):
-        pass
+        if self.targetIndex == self.playerIndex:
+            msj = QtWidgets.QMessageBox()
+            msj.setText(str('Yay'))
+            msj.exec_()
+
+    def switch(self):
+        if self.timerON:
+            self.timer.stop()
+        else:
+            self.timer.start(1000)
 
 
 if __name__ == "__main__":

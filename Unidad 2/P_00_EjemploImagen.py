@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic, QtWidgets
 
-qtCreatorFile = "otro.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P_00_EjemploImagen.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 

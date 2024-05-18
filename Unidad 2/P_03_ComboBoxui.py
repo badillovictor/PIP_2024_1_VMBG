@@ -14,10 +14,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         # Área de los Signals
         self.index = 1
         self.datosIntegrantes = {
-            1: ['Victor Manuel Badillo Gonzalez', 'Persona', '17', 'O-', ':/Fotos/ruta.png'],
-            2: ['Moises Eduardo Juarez Beltran', 'Carlotear', '20', 'A+', ':/Fotos/ruta.png'],
-            3: ['Sofia Hernandez Arrazola', 'Dormir', '20', 'B+', ':/Fotos/ruta.png'],
-            4: ['Uriel Gonzalez Gabriel', 'Estudiar', '21', 'D-', ':/Fotos/ruta.png']
+            1: ['Victor Manuel Badillo Gonzalez', 'Persona', '17', 'O-', ':/Personas/YoMero.png'],
+            2: ['Moises Eduardo Juarez Beltran', 'Carlotear', '20', 'A+', ':/Personas/Moy.png'],
+            3: ['Sofia Hernandez Arrazola', 'Dormir', '20', 'B+', ':/Personas/Sofia.png'],
+            4: ['Uriel Gonzalez Gabriel', 'Estudiar', '21', 'D-', ':/Personas/Uriel.png']
         }
         self.cmbIntegrantes.addItem('--Select--', 0)
         self.cmbIntegrantes.addItem('Victor Manuel', 1)
@@ -34,6 +34,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
                 'Edad: \t' + self.datosIntegrantes[1][2] + '\n' +
                 'Tipo Sangre: \t' + self.datosIntegrantes[1][3]
             )
+            self.lbImagen.setPixmap(QtGui.QPixmap(self.datosIntegrantes[1][4]))
         elif self.sender().currentData() == 2:
             print(
                 'Nombre: \t' + self.datosIntegrantes[2][0] + '\n' +
@@ -41,6 +42,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
                 'Edad: \t' + self.datosIntegrantes[2][2] + '\n' +
                 'Tipo Sangre: \t' + self.datosIntegrantes[2][3]
             )
+            self.lbImagen.setPixmap(QtGui.QPixmap(self.datosIntegrantes[2][4]))
         elif self.sender().currentData() == 3:
             print(
                 'Nombre: \t' + self.datosIntegrantes[3][0] + '\n' +
@@ -48,6 +50,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
                 'Edad: \t' + self.datosIntegrantes[3][2] + '\n' +
                 'Tipo Sangre: \t' + self.datosIntegrantes[3][3]
             )
+            self.lbImagen.setPixmap(QtGui.QPixmap(self.datosIntegrantes[3][4]))
         elif self.sender().currentData() == 4:
             print(
                 'Nombre: \t' + self.datosIntegrantes[4][0] + '\n' +
@@ -55,6 +58,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
                 'Edad: \t' + self.datosIntegrantes[4][2] + '\n' +
                 'Tipo Sangre: \t' + self.datosIntegrantes[4][3]
             )
+            self.lbImagen.setPixmap(QtGui.QPixmap(self.datosIntegrantes[4][4]))
 
 
 if __name__ == "__main__":

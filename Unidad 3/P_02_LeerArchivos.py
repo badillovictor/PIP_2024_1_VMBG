@@ -5,4 +5,5 @@ def readFile(rute):
             thing = line.strip().split(',')
             thing[-1] = int(thing[-1])
             todo.append(thing)
+            print(thing)
     return todo

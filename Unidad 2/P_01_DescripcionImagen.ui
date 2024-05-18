@@ -17,40 +17,58 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>20</y>
-      <width>63</width>
-      <height>20</height>
+      <x>10</x>
+      <y>10</y>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>Logo UAT</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Imagenes/resources.qrc">:/Logos/LogoUAT.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>940</x>
-      <y>20</y>
-      <width>63</width>
-      <height>20</height>
+      <y>10</y>
+      <width>141</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>Logo FIT</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Imagenes/resources.qrc">:/Logos/LogoFIT.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>930</x>
-      <y>540</y>
-      <width>91</width>
-      <height>20</height>
+      <y>499</y>
+      <width>151</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>Logo Eqwipo</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Imagenes/resources.qrc">:/Logos/RhineLab.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="btnAnterior">
@@ -187,9 +205,9 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>250</y>
+      <y>110</y>
       <width>291</width>
-      <height>261</height>
+      <height>401</height>
      </rect>
     </property>
     <property name="text">
@@ -206,12 +224,14 @@
      <x>0</x>
      <y>0</y>
      <width>1095</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../Imagenes/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -11,11 +11,11 @@ class MyApp(QtWidgets.QMainWindow, P1_Ejemplo.Ui_MainWindow):
         self.setupUi(self)
 
         # Área de los Signals
-        self.btn1.clicked.connect(self.saludar)
+        self.btnSaludar.clicked.connect(self.saludar)
 
     # Área de los Slots
     def saludar(self):
-        self.txt1.setText("Saludos")
+        self.txtValor.setText("Saludos")
 
 
 if __name__ == "__main__":
