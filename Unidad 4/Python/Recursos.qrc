@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="meme">
+    <file>Imagen/Ardilla.jpeg</file>
+    <file>foco.jpeg</file>
+    <file>Imagen/badillo .png</file>
+    <file>Imagen/fians.jpg</file>
+    <file>Imagen/GonzalezUriel.png</file>
+    <file>Imagen/JuarezBeltran.png</file>
+    <file>Imagen/logo_equipo.jpg</file>
+    <file>Imagen/sofi.png</file>
+    <file>Imagen/uat-logo.jpg</file>
+    <file>Imagen/como.jpg</file>
+  </qresource>
+  <qresource prefix="variados">
+    <file>jaguar.jpeg</file>
+    <file>TUCAN.jpg</file>
+    <file>delfin.jpeg</file>
+    <file>OSO.jpeg</file>
+    <file>URON.jpg</file>
+    <file>VENADO.jpg</file>
+    <file>LEON.jpeg</file>
+  </qresource>
+</RCC>
